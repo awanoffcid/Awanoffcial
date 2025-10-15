@@ -1,0 +1,84 @@
+ *═══════════════════════════════════════════════════════
+ *  ⌬  YT NeoShiroko Labs
+ *═══════════════════════════════════════════════════════
+ *  🌐  Website     : https://www.neolabsofficial.my.id
+ *  ⌨︎  Developer   : https://Awang.cloud
+ *  ▶︎  YouTube     : https://www.youtube.com/@zassci_desu
+ *  ⚙︎  Panel Murah : pteroku-desu.awang.cloud
+ *
+ *  ⚠︎  Mohon untuk tidak menghapus watermark ini
+ *═══════════════════ © 2025 Awang offcial ─════════════════════
+
+📖 PANDUAN PENGGUNAAN
+
+Semua pengaturan inti website ini tersimpan di file `config.js` (folder js).
+Kamu bisa ubah nama toko, banner, produk, kontak, hingga metode pembayaran sesuai brand kamu.
+
+⚠️ Ingat! Format JSON harus tetap sama. Jangan hapus tanda kutip (" ") dan koma ( , ) yang ada, cukup ubah isinya saja.
+
+* Bagian-Bagian config.js:
+
+1. **Identitas Toko**
+   - `Awang offcial` → Nama toko kamu.
+   - `https://img1.pixhost.to/images/9414/651131252_awang.jpg` → URL gambar profil (misalnya logo atau foto).
+   - `https://img1.pixhost.to/images/9416/651169886_awang.jpg` → URL banner/header toko.
+   - `saya awang menyediakan berbagi produk digital` → Deskripsi toko, bisa multi-baris pakai `\n\n`.
+   - `` → Alamat lengkap (opsional, bisa diganti online shop address).
+
+2. **Sosial Media**
+   - `awangganz47@gmail.com` → Email resmi toko.
+   - `AwangXoffc ID` → Username channel YouTube.
+   - `Awang OFC` → Username akun TikTok.
+   - `6283178194062` → Nomor WhatsApp (format 62 tanpa +).
+   - `@awangoffc` → Username Telegram.
+
+3. **Metode Pembayaran**
+   - `085848307759` → Nomor akun Dana.
+   - `Tidak tersedia` → Nomor akun Gopay.
+   - `tidak tersedia` → Nomor akun Ovo.
+   - `https://img1.pixhost.to/images/9414/651134053_awang.jpg` → URL gambar QRIS (upload dulu ke catbox atau hosting gambar).
+
+4. **Integrasi Telegram (Notifikasi Pesan)**
+   - `bot` → Token bot dari BotFather.
+   - `chatid` → Chat ID/Group ID tujuan notifikasi.
+
+* Produk (productsData)
+
+- Semua produk diatur di bagian `productsData`.
+- Format produk sudah dipisah per kategori, contoh:
+  - Hosting
+  - Desain
+  - Produk Digital
+
+* Struktur produk:
+
+{ "id": 1, "Jasa rename script": "9k", "icon": "https://img1.pixhost.to/images/9416/651169886_awang.jpg", // Ikon FontAwesome "description": "Deskripsi produk", "variants": [ { "name": "Paket A", "price": 10000 }, { "name": "Paket B", "price": 20000 } ] }
+
+- `10` → Nomor unik (jangan ada yang sama).
+- `jasa rename script` → Nama produk.
+- `https://autoresbot.com/tmp_files/248a2c84-f283-472d-89b7-b085dd747a80.jpg` → Ikon (gunakan class FontAwesome).
+- `script yang bisa antj enc itu di renamae jika kalian gabisa rename` → Penjelasan produk.
+- `📃 𝗢𝗣𝗘𝗡 𝗝𝗔𝗦𝗔 𝗥𝗘𝗡𝗔𝗠𝗘 𝗦𝗖 𝗕𝗢𝗧 𝗪𝗔 📃
+
+💻 𝗗𝗘𝗧𝗔𝗜𝗟 𝗝𝗔𝗦𝗔 : 𝟵𝗞
+
+⛥ Ubah Nama Bot & Owner
+⛥ Ubah Nomor Bot & Owner
+⛥ Ubah Logo/Gambar Bot
+⛥ Ubah Semua Nama Sesuai Req
+
+☎️ 𝗠𝗜𝗡𝗔𝗧?? 𝗖𝗛𝗔𝗧 𝗢𝗪𝗡𝗘𝗥 : 6283178194062
+✅ 𝗔𝗧𝗔𝗨 𝗞𝗔𝗟𝗜𝗔𝗡 𝗕𝗜𝗦𝗔 𝗞𝗘𝗧𝗜𝗞 𝗗𝗜 𝗕𝗢𝗧 [ .𝗼𝘄𝗻𝗲𝗿 ]` → List pilihan paket & harga.
+
+* Tips:
+- Mau tambah/kurangin produk? → Boleh, asal format sama.
+- Mau tambah/kurangin payment? → Bisa, tapi mungkin perlu edit `keranjang.html` agar UI menyesuaikan.
+- Semua harga dalam angka (tanpa Rp, langsung angka aja).  
+- Kalau mau harga fleksibel → bisa tulis `"Harga sesuai request"`.
+
+* Intinya:
+- Edit `config.js` → otomatis data di web ikut berubah.
+- Jaga format JSON supaya tidak error.
+- Simpan semua gambar (logo/banner/qris) di hosting gambar seperti [catbox.moe](https://catbox.moe) biar URL stabil.
+
+Selamat ngoprek, semoga jualan makin lancar dan jangan lupa like, komen dan subrek.
